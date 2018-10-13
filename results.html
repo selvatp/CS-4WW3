@@ -1,20 +1,71 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="parking Spot finder. Connecting individuals with parking spots with those who are in need. ">
+      <meta name="keywords" content="parking, spot, finder">
+    <meta name="author" content="Piranaven Selvathayabaran">
+    <title>Parking Spot Finder | Register</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1>Parking Spot Finder</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="search.html">Search</a></li>
+            <li><a href="parking.html">Parking</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<style>
-	body {
-    	background-color: coral;
-	}
-</style>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+    <section id="results_img">
+      <div class="container">
+        <h1 class="map-title">Google Maps Results</h1>
+        <img src="img/results.png" alt="results">
+      </div>
+    </section>
+    <section id="results_section">
+      <div class="container">
+        <article id="resuts-col">
+          <h1 class="results-title">Tabular Results</h1>
+          <ul id="results">
+            <li>
+              <h3><a href="parking.html">Parking Spot #1</a></h3>
+              <p>This conveniently located parking spot is ideal if you are looking for something close to the subway and downtown core!</p>
+              <p>Pricing: $10 per hour</p>
+            </li>
+            <li>
+              <h3><a href="parking.html">Parking Spot #2</a></h3>
+              <p>A great place to park if you are going out to the game. We offer discounted rates if you are staying overnight or long periods of time. Message for more details!</p>
+              <p>Pricing: $15 per hour</p>
+            </li>
+            <li>
+              <h3><a href="parking.html">Parking Spot #3</a></h3>
+              <p>Available for weekends during prime times before 10pm. Ideal if planning short stays.</p>
+              <p>Pricing: $5 per hour</p>
+            </li>
+          </ul>
+        </article>
 
-</head>
-<body >
+      </div>
+    </section>
 
 
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
-
-</body>
+    <footer>
+      <p>CS-4WW3, Copyright &copy; 2018</p>
+             <a href="https://facebook.com/" id="share-buttons" target="_blank">
+        <img src="img/facebook-icon.png" alt="Facebook" /></a>
+       <a href="https://twitter.com/" id="share-buttons" target="_blank">
+        <img src="img/twitter-icon.png" alt="Facebook" /></a>
+    </footer>
+  </body>
 </html>

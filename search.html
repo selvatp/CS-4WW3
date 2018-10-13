@@ -1,136 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="parking Spot finder. Connecting individuals with parking spots with those who are in need. ">
+      <meta name="keywords" content="parking, spot, finder">
+    <meta name="author" content="Piranaven Selvathayabaran">
+    <title>Parking Spot Finder | Register</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1>Parking Spot Finder</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="search.html">Search</a></li>
+            <li><a href="parking.html">Parking</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>
-</head>
-<body>
-
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div> 
-</div>
-
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
-
-<ol>
-        <li>First Item 
-        <ol>
-                <li>Sub-item</li>
-                <li>Sub-item</li>
-        </ol>
-    </li>
-    <li>Second Item</li>
-
-   <select name="city">
-        <option value="Hamilton">Hamilton</option>
-        <option value="Toronto" selected>Toronto</option>
-        <option value="Ottawa">Ottawa</option>
-   </select>
-
-   <input type="submit" value="Send">
-
-   <fieldset>
-        <legend>Login</legend>
-        <input type="text" name="firstname"></input>
-        <input type="password" name="userpw"> </input> 
-   </fieldset>
+ <section id="main">
+      <div class="container">
+       
 
 
-   <input type="date" name="deadline">
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Search for nearby parking Spots</h3>
+         
+         <fieldset>
+          <legend>Choose search options </legend>
+
+          <div>
+              <label for="Arr-Date">Arrival Date</label>
+              <input type="date" id="arr-date" name="trip"
+                     value="2018-07-22"
+                     min="2018-01-01" max="2018-12-31" />
+          </div>
+           <div class="control">
+            <label for="Arr-Time">Arrive Time:</label>
+            <input type="time" id="arr-time" name="appt-time"
+               min="9:00" max="18:00" required />
+         
+            </div>  
+          <div>
+              <label for="Dep-Date">Departure Date</label>
+              <input type="date" id="dept-date" name="trip"
+                     value="2018-07-29"
+                     min="2018-01-01" max="2018-12-31"/ >
+          </div>
 
 
+            <div class="control">
+            <label for="Dep-Time">Departure Time:</label>
+            <input type="time" id="dept-time" name="appt-time"
+               min="9:00" max="18:00" required />
+         
+              </div>
+
+              <div class="slidecontainer">
+                <label for="price_range">Price Range: <b>10</b>  <i>This is a placeholder number. Will change with js</i></label></br>
+                  <input type="range" min="1" max="50" value="10" class="slider" id="priceRange">
+              </div>
 
 
-<form name="myform" method=post action="registeration">
-    <input type="text" name="firstname">
-    <input type="password" name="userpw">
-    <textareawidth="50" height="5" name="comments"> </textarea>
-    <input type="radio" name="fruit" value="apples"> apples
-    <input type="radio" name="fruit" value="oranges"> oranges
-    <input type="radio" name="fruit" value="bananas"> bananas
-    <input type="checkbox" name="order" value="fries"> fries
-    <input type="checkbox" name="order" value="soda"> soda
-    <input type="checkbox" name="order" value="dessert"> dessert
-    <select name="city">
-        <option value="Hamilton">Hamilton</option>
-        <option value="Dundas">Dundas</option>
-        <option value="Ancaster">Ancaster</option>
-    </select>
-    <input type="Submit" value="Send">
-</form>
-</body>
+            <div>
+              <label for="dist_range">Distance:</label>
+              <select id="dist-select">
+                <option value="">--Please choose a distance range--</option>
+                <option value="distance_1">0km to 5km</option>
+                <option value="distance_2">5km to 10km</option>
+                <option value="distance_3">15km to 20km</option>
+                <option value="distance_4">20km to 25km</option>
+                <option value="distance_5">25km to 30km</option>
+             </select>
+            </div>
+        <div class="stars">
+          <label for="rating">Rating:</label>
+          <label>
+            <input type="radio" name="stars" value="1" />
+            <span class="icon">★</span>
+          </label>
+          <label>
+            <input type="radio" name="stars" value="2" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+          </label>
+          <label>
+            <input type="radio" name="stars" value="3" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>   
+          </label>
+          <label>
+            <input type="radio" name="stars" value="4" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+          </label>
+          <label>
+            <input type="radio" name="stars" value="5" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+          </label>
+        </div>
+          <input type="submit" value="Send Request">
+
+      </fieldset>
+
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>CS-4WW3, Copyright &copy; 2018</p>
+             <a href="https://facebook.com/" id="share-buttons" target="_blank">
+        <img src="img/facebook-icon.png" alt="Facebook" /></a>
+       <a href="https://twitter.com/" id="share-buttons" target="_blank">
+        <img src="img/twitter-icon.png" alt="Facebook" /></a>
+    </footer>
+  </body>
 </html>

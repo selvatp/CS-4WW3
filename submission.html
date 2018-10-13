@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="parking Spot finder. Connecting individuals with parking spots with those who are in need. ">
+	  <meta name="keywords" content="parking, spot, finder">
+  	<meta name="author" content="Piranaven Selvathayabaran">
+    <title>Parking Spot Finder | Submission</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1>Parking Spot Finder</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="parking.html">Parking</a></li>
+            <li class="current"><a href="submission.html">Submission</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <form>
+      <div class="container">
+        <h1>Submit your parking spot! </h1>
+        <p>Fill in the following form to make your parking spot available now!</p>
+        <hr>
+
+        <label for="psname"><b>Parking Spot Name:</b></label>
+        <input type="text" placeholder="The name of the parking spot..." name="psname" required>
+
+        <label for="location"><b>Location:</b></label>
+        <input type="text" placeholder="Longitude" name="long" required>
+        <input type="text" placeholder="Latitude" name="lat" required>
+
+        <label for="file"><b>Select a file: </b></label>
+        <input type="file" name="myFile">
+
+        <label for="description"><b>Description: </b></label>
+        <textarea id="description" name="description" placeholder="Write something.."></textarea>
+
+        <button type="submit" class="registerbtn">Submit</button>
+      </div>
+
+    </form>
+
+    <footer>
+      <p>CS-4WW3, Copyright &copy; 2018</p>
+             <a href="https://facebook.com/" id="share-buttons" target="_blank">
+        <img src="img/facebook-icon.png" alt="Facebook" /></a>
+       <a href="https://twitter.com/" id="share-buttons" target="_blank">
+        <img src="img/twitter-icon.png" alt="Facebook" /></a>
+    </footer>
+  </body>
+</html>
