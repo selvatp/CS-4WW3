@@ -1,13 +1,15 @@
+
+
+/*****************General*****************/
 body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#FEFEFE;
+  background-color:#ffffff;
 }
 
-/* Global */
 .container{
-  width:80%;
+  width:85%;
   margin:auto;
   overflow:hidden;
 }
@@ -17,30 +19,13 @@ ul{
   padding:0;
 }
 
-.button_1{
-  height:38px;
-  background:#e8491d;
-  border:0;
-  padding-left: 20px;
-  padding-right:20px;
-  color:#ffffff;
-}
-
-.dark{
-  padding:15px;
-  background:#35424a;
-  color:#ffffff;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-
-/* Header **/
+/*****************Header*************/ 
 header{
   background:#DE3939;
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
-  border-bottom:#DE3939 10px solid;
+  border-bottom:#DE3939 3px solid;
 }
 
 header a{
@@ -79,8 +64,7 @@ header a:hover{
   font-weight:bold;
 }
 
-
-#showcase{
+#main_show{
   min-height:525px;
   background:url('img/parking.jpg') no-repeat 0 -2000px ;
   text-align:center;
@@ -88,18 +72,17 @@ header a:hover{
   color:#ffffff;
 }
 
-#showcase h1{
+#main_show h1{
   margin-top:200px;
   font-size:55px;
   margin-bottom:10px;
 }
 
-#showcase p{
+#main_show p{
   font-size:20px;
 }
 
-
-/* Boxes */
+/*Three Tiles*/
 #tiles{
   margin-top:20px;
 }
@@ -107,179 +90,21 @@ header a:hover{
 #tiles .tile{
   float:left;
   text-align: center;
-  width:30%;
+  width:32%;
   padding:10px;
 }
 
 #tiles .tile img{
-  width:90px;
+  width:100px;
 }
 
+/**Footer **/ 
 footer{
-  padding:20px;
+  padding:10px;
   margin-top:20px;
   color:#ffffff;
   background-color:#7B7A7A;
   text-align: center;
-}
-
-* {box-sizing: border-box}
-
-/* Add padding to containers */
-.container signin {
-  padding: 10px;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password], input[type=file] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-input[type=date], input[type=time], input [type="range"]{
-	width: 100%;
-	padding: 15px;
-	margin: 5px 0 22px 0;
- 	display: inline-block;
-  	border: none;
-  	background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus , input[type=file]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for the submit/register button */
-.registerbtn {
-  background-color: #DE3939;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.registerbtn:hover {
-  opacity:1;
-}
-
-#description{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 15px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-/* Add a blue text color to links */
-a {
-  color: blue;
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}
-
-
-/* Style inputs */
-  input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  width: 100%;
-  background-color: #DE3939;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Add a background color to the submit button on mouse-over */
-input[type=submit]:hover {
-  background-color: #DE3939;
-}
-
-.stars {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-}
-
-#description {
-	!important
-	width: 600px;
-	height: 200px;
-	border: 3px solid #cccccc;
-	padding: 5px;
-	font-family: Tahoma, sans-serif;
-	background-position: bottom right;
-	background-repeat: no-repeat;
-}
-
-ul#results li{
-  list-style: none;
-  padding:20px;
-  border: #cccccc solid 1px;
-  margin-bottom:5px;
-  background:#e6e6e6;
-}
-
-#results_img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: 80%;
-  padding: 20px;
-  margin-bottom:5px;
-  box-shadow: 20;
-}
-
-.rimages{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px; 
-    padding: 10px;
-    background-position: 50% 50%;
-}
-
-#PspotTitle{
-  text-decoration:none;
-  text-transform: uppercase;
-  font-size:16px;
-  display: block;
-  padding: 0 10px 0 10px;
-
 }
 
 #share-buttons img {
@@ -296,136 +121,186 @@ ul#results li{
     background-size:     cover;
 }
  
-.btn-grey{
-    background-color:#D8D8D8;
-  color:#FFF;
-}
-.rating-block{
-  background-color:#FAFAFA;
-  border:1px solid #EFEFEF;
-  padding:15px 15px 20px 15px;
-  border-radius:3px;
-}
-.bold{
-  font-weight:700;
-}
-.padding-bottom-7{
-  padding-bottom:7px;
+ * {box-sizing: border-box}
+
+.dbackground{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
-.review-block{
+ /**Search Page**/ 
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=file], #description{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=date], input[type=time], input [type="range"]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus , input[type=file]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.stars, .dist-select, .price_range {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type=submit], .redButton {
+  width: 100%;
+  background-color: #DE3939;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover, .redButton:hover {
+  background-color: #e81414;
+}
+
+hr {
+  border: 2px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/*Sigin-container on register page*/
+/* Set a grey background color and center the text of the "sign in" section */
+.sigin_container {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+/*Results Page */
+#results_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 80%;
+  padding: 20px;
+  margin-bottom:5px;
+  box-shadow: 20;
+}
+ul#results li{
+  list-style: none;
+  float; right;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+ ul#results li img{
+    border: 1px solid #DE3939; /* Red border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.mapImage {
+    display: inline;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding :20px;
+}
+
+
+/**Parking Spot Example**/
+.img-rounded{
+  width:10%;
+  height:auto;
+}
+.rblock{
   background-color:#FAFAFA;
   border:1px solid #EFEFEF;
   padding:15px;
   border-radius:3px;
   margin-bottom:15px;
 }
-.review-block-name{
+.rblock-name{
   font-size:12px;
   margin:10px 0;
 }
-.review-block-date{
+.rblock-date{
   font-size:12px;
 }
-.review-block-rate{
+.rblock-rate{
   font-size:13px;
   margin-bottom:15px;
 }
-.review-block-title{
+.rblock-title{
   font-size:15px;
   font-weight:700;
   margin-bottom:10px;
 }
-.review-block-description{
+.rblock-description{
   font-size:13px;
 }
 
 
 
-.heading {
-    font-size: 25px;
-    margin-right: 25px;
-}
-
-.fa {
-    font-size: 25px;
-}
-
-.checked {
-    color: orange;
-}
-
-/* Three column layout */
-.side {
-    float: left;
-    width: 15%;
-    margin-top: 10px;
-}
-
-.middle {
-    float: left;
-    width: 70%;
-    margin-top: 10px;
-}
-
-/* Place text to the right */
-.right {
-    text-align: right;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* The bar container */
-.bar-container {
-    width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    color: white;
-}
-
-/* Individual bars */
-.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
-.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
-
-/* Responsive layout - make the columns stack on top of each other instead of next to each other */
-@media (max-width: 400px) {
-    .side, .middle {
-        width: 100%;
-    }
-    /* Hide the right column on small screens */
-    .right {
-        display: none;
-    }
-}
 /* Media Queries */
 @media(max-width: 768px){
   header #logo,
   header nav,
   header nav li,
-  #newsletter h1,
-  #newsletter form,
   #tiles .tile,
   article#main-col,
-  aside#sidebar{
+  #results_img{
     float:none;
     text-align:center;
     width:100%;
   }
 
+ .mapImage{
+    float:none;
+    text-align:center;
+    width:auto;
+    height:200px;
+ }
+
   header{
     padding-bottom:20px;
   }
 
-  #showcase h1{
+  #main_show h1{
     margin-top:40px;
   }
 
 }
+
