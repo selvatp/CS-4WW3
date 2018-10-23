@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="parking Spot finder. Connecting individuals with parking spots with those who are in need. ">
+	  <meta name="keywords" content="parking, spot, finder">
+  	<meta name="author" content="Piranaven Selvathayabaran">
+    <title>Parking Spot Finder | Submission</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <!--Body Section :  Content -->
+  <body>
+    <!-- Header Secton with Logo and Nav-->
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1>Parking Spot Finder</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="parking.html">Parking</a></li>
+            <li class="current"><a href="submission.html">Submission</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Form for Submission of Parking Spot--> 
+    <form>
+      <div class="container">
+        <h1>Submit your parking spot! </h1>
+        <p>Fill in the following form to make your parking spot available now!</p>
+        <hr>
+
+        <!--Name--> 
+        <label for="psname"><b>Parking Spot Name:</b></label>
+        <input type="text" placeholder="The name of the parking spot..." name="psname" required>
+        <!--Description--> 
+        <label for="description"><b>Description: </b></label>
+        <textarea id="description" name="description" placeholder="Write something.."></textarea>
+        <!--Parking Spot Location--> 
+        <label for="location"><b>Location:</b></label>
+        <input type="text" placeholder="Longitude" name="long" required>
+        <input type="text" placeholder="Latitude" name="lat" required>
+        <!--Image of Parking Spot --> 
+        <label for="file"><b>Image to be displayed: </b></label>
+        <input type="file" name="myFile">
+        <!--Submit Button --> 
+        <button type="submit" disabled class="redButton">Submit </button>
+      </div>
+    </form>
+
+    <!--Footer: Copyright information & sharing links -->  
+    <footer>
+      <p>CS-4WW3, Copyright &copy; 2018</p>
+        <!--Facebook link pointing that will open in new tab--> 
+        <a href="https://facebook.com/" id="share-buttons" target="_blank">
+        <img src="img/facebook-icon.png" alt="Facebook" /></a>
+        <!--Twitter  link pointing that will open in new tab--> 
+        <a href="https://twitter.com/" id="share-buttons" target="_blank">
+        <img src="img/twitter-icon.png" alt="Facebook" /></a>
+    </footer>
+
+  </body>
+</html>

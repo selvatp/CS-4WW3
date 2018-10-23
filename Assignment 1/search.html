@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <!--head section:  includes meta and reference to style sheet -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="parking Spot finder. Connecting individuals with parking spots with those who are in need. ">
+      <meta name="keywords" content="parking, spot, finder">
+    <meta name="author" content="Piranaven Selvathayabaran">
+    <title>Parking Spot Finder | Register</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <!--Body Section :  Content -->
+  <body>
+    <!-- Header Secton with Logo and Nav-->
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1>Parking Spot Finder</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="search.html">Search</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="parking.html">Parking</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <div class="container">
+        <div class="dbackground">
+          <h2>Search for nearby parking Spots</h2>
+            <form action="results.html">
+              <fieldset>
+               <legend>Choose search options </legend>
+                <!--Arrival date--> 
+                <div>
+                  <label for="Arr-Date">Arrival Date</label>
+                  <input type="date" id="arr-date" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                </div>
+                <!--Arrival Time --> 
+                <div class="control">
+                  <label for="Arr-Time">Arrive Time:</label>
+                  <input type="time" id="arr-time" name="appt-time" min="9:00" max="18:00" required />
+                </div>  
+                <!--Departure Date-->
+                <div>
+                  <label for="Dep-Date">Departure Date</label>
+                  <input type="date" id="dept-date" name="trip" value="2018-07-29" min="2018-01-01" max="2018-12-31"/ >
+                </div>
+                <!-- Departure Time--> 
+                <div class="control">
+                  <label for="Dep-Time">Departure Time:</label>
+                  <input type="time" id="dept-time" name="appt-time" min="9:00" max="18:00" required />
+                </div>
+                <!--Price Range -->
+                <div class="price_range">
+                  <label for="price_range">Price Range: <b>10</b>  <i>This is a placeholder number. Will change with js</i></label></br>
+                  <input type="range" min="1" max="50" value="10" class="slider" id="priceRange">
+                </div>
+                <!--Distance--> 
+                <div class="dist-select">
+                  <label for="dist_range">Distance:</label>
+                  <select id="dist-select">
+                    <option value="">--Please choose a distance range--</option>
+                    <option value="distance_1">0km to 5km</option>
+                    <option value="distance_2">5km to 10km</option>
+                    <option value="distance_3">15km to 20km</option>
+                    <option value="distance_4">20km to 25km</option>
+                    <option value="distance_5">25km to 30km</option>
+                  </select>
+                </div>
+                <!--Star Rating-->
+                <div class="stars">
+                  <label for="rating">Rating:</label>
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </div>
+                <!--Submit Button-->
+                <div class="control">
+                  <input type="submit" value="Send Request" href="results.html">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+    <!--Footer: Copyright information & sharing links -->  
+    <footer>
+      <p>CS-4WW3, Copyright &copy; 2018</p>
+        <!--Facebook link pointing that will open in new tab--> 
+        <a href="https://facebook.com/" id="share-buttons" target="_blank">
+        <img src="img/facebook-icon.png" alt="Facebook" /></a>
+        <!--Twitter  link pointing that will open in new tab--> 
+        <a href="https://twitter.com/" id="share-buttons" target="_blank">
+        <img src="img/twitter-icon.png" alt="Facebook" /></a>
+    </footer>
+
+  </body>
+</html>
